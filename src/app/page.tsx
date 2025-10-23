@@ -12,10 +12,6 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import { Calendar, DollarSign, Heart, Quote, Sparkles, Star, Users } from 'lucide-react';
 
-const assetMap = [
-  { id: "hero-image", url: "https://images.pexels.com/photos/901439/pexels-photo-901439.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Women practicing pilates in a peaceful studio environment" }
-];
-
 export default function Home() {
   return (
     <ThemeProvider
@@ -36,8 +32,6 @@ export default function Home() {
             text: "Book Class",
             href: "contact"
           }}
-          className="bg-blue-500/90 backdrop-blur-md border-blue-600/30 text-blue-50"
-          buttonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
         />
       </div>
 
@@ -60,8 +54,6 @@ export default function Home() {
           imageSrc="https://images.pexels.com/photos/901439/pexels-photo-901439.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
           imageAlt="Women practicing pilates in a peaceful studio environment"
           imagePosition="right"
-          tagClassName="bg-blue-100 text-blue-700 border-blue-300"
-          buttonClassName="first:bg-blue-600 first:hover:bg-blue-700 first:border-blue-700 first:text-white last:bg-blue-50 last:hover:bg-blue-100 last:border-blue-300 last:text-blue-700"
         />
       </div>
 
@@ -78,7 +70,6 @@ export default function Home() {
               href: "about"
             }
           ]}
-          buttonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
         />
       </div>
 
@@ -108,8 +99,6 @@ export default function Home() {
               imageAlt: "Pregnant women in prenatal pilates class"
             }
           ]}
-          textBoxTagClassName="bg-blue-100 text-blue-700 border-blue-300"
-          textBoxButtonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
         />
       </div>
 
@@ -168,10 +157,6 @@ export default function Home() {
               ]
             }
           ]}
-          textBoxTagClassName="bg-blue-100 text-blue-700 border-blue-300"
-          textBoxButtonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
-          badgeClassName="bg-blue-100 text-blue-700 border-blue-300"
-          planButtonClassName="first:bg-blue-600 first:hover:bg-blue-700 first:border-blue-700 first:text-white last:bg-blue-50 last:hover:bg-blue-100 last:border-blue-300 last:text-blue-700"
         />
       </div>
 
@@ -204,9 +189,6 @@ export default function Home() {
               imageAlt: "Portrait of Maya Chen, Reformer Pilates Expert"
             }
           ]}
-          textBoxTagClassName="bg-blue-100 text-blue-700 border-blue-300"
-          textBoxButtonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
-          roleClassName="bg-blue-600 text-white"
         />
       </div>
 
@@ -223,7 +205,8 @@ export default function Home() {
               role: "Marketing Manager",
               company: "Tech Startup",
               rating: 5,
-              imageSrc: "https://images.pexels.com/photos/34345272/pexels-photo-34345272.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              imageSrc: "https://images.pexels.com/photos/34345272/pexels-photo-34345272.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: "Portrait of Jennifer Adams"
             },
             {
               id: "2",
@@ -231,7 +214,8 @@ export default function Home() {
               role: "Working Mom",
               company: "Freelancer",
               rating: 5,
-              imageSrc: "https://images.pexels.com/photos/1153370/pexels-photo-1153370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              imageSrc: "https://images.pexels.com/photos/1153370/pexels-photo-1153370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: "Portrait of Lisa Thompson"
             },
             {
               id: "3",
@@ -239,7 +223,8 @@ export default function Home() {
               role: "Small Business Owner",
               company: "Local Cafe",
               rating: 5,
-              imageSrc: "https://images.pexels.com/photos/5119202/pexels-photo-5119202.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              imageSrc: "https://images.pexels.com/photos/5119202/pexels-photo-5119202.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: "Portrait of Maria Gonzalez"
             },
             {
               id: "4",
@@ -247,11 +232,10 @@ export default function Home() {
               role: "New Mom",
               company: "Healthcare",
               rating: 5,
-              imageSrc: "https://images.pexels.com/photos/1153370/pexels-photo-1153370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              imageSrc: "https://images.pexels.com/photos/1153370/pexels-photo-1153370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              imageAlt: "Portrait of Rebecca Kim"
             }
           ]}
-          textBoxTagClassName="bg-blue-100 text-blue-700 border-blue-300"
-          textBoxButtonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
         />
       </div>
 
@@ -267,8 +251,6 @@ export default function Home() {
           buttonText="Book Now"
           termsText="By signing up, you agree to receive class updates and wellness tips. Unsubscribe anytime."
           mediaPosition="right"
-          tagClassName="bg-blue-100 text-blue-700 border-blue-300"
-          buttonClassName="bg-blue-600 hover:bg-blue-700 border-blue-700 text-white"
         />
       </div>
 
@@ -340,9 +322,6 @@ export default function Home() {
             }
           ]}
           copyrightText="© 2025 | FlexFit Studio"
-          className="bg-blue-800 text-blue-50"
-          columnTitleClassName="text-blue-200"
-          copyrightTextClassName="text-blue-300"
         />
       </div>
     </ThemeProvider>
